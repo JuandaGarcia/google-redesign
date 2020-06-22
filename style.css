@@ -44,7 +44,7 @@
 	height: 3em;
 	border: none;
 	outline: none;
-	background: url('/img/boxs.svg');
+	background: url('./img/boxs.svg');
 	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: center;
