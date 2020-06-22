@@ -32,6 +32,14 @@
 	width: 100%;
 }
 
+.header__nav ul {
+	display: flex;
+}
+
+.header__nav ul li {
+	list-style: none;
+}
+
 .header__link {
 	color: #323232;
 	font-size: 1.2em;
