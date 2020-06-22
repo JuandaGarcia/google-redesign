@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+	background-color: #34a853;
+	color: white;
+}
+
+.main-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	justify-content: space-between;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 1.5em 1.5em;
+	width: 100%;
+}
+
+.header__link {
+	color: #323232;
+	font-size: 1.2em;
+	text-decoration: none;
+	margin-right: 1em;
+}
+
+.header__optionsButton {
+	width: 3em;
+	height: 3em;
+	border: none;
+	outline: none;
+	background: url('/img/boxs.svg');
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	margin-right: 1em;
+	transition: 0.2s ease;
+}
+
+.header__profileButton {
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	border: none;
+	overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	transition: 0.2s ease;
+}
+
+.profileButton__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 35%;
+	margin-bottom: 10em;
+}
+
+.conatiner__logo {
+	width: 25%;
+}
+
+.container__form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.label {
+	width: 100%;
+	display: flex;
+	height: 3.1em;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+	position: relative;
+	border-radius: 25px;
+	margin-top: 3em;
+	padding: 0 1em;
+	align-items: center;
+}
+
+.label__input {
+	width: 85%;
+	margin-left: 1em;
+	outline: none;
+	border: none;
+	font-size: 1.2em;
+}
+
+.label__searchIcon {
+	opacity: 0.5;
+	height: 45%;
+}
+
+.label__microButton {
+	position: absolute;
+	width: 3.5em;
+	height: 3.5em;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+	right: 3%;
+	top: -40%;
+	background: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.label__microButton:hover,
+.header__optionsButton:hover,
+.header__profileButton:hover,
+.searchButtons__button:hover {
+	transform: scale(1.2);
+}
+
+.microButton__img {
+	width: 70%;
+}
+
+.searchButtons {
+	width: 60%;
+	display: flex;
+	margin-top: 3em;
+	justify-content: space-between;
+}
+
+.searchButtons__button {
+	height: 3.5em;
+	width: 45%;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	border-radius: 10px;
+	transition: 0.2s ease;
+}
+
+.footer {
+	width: 100%;
+	height: 4em;
+	align-self: end;
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 5em;
+}
+
+.footer__flag {
+	height: 90%;
+}
+
+.footer__links a {
+	color: #323232;
+	font-size: 1.2em;
+	margin-right: 1em;
+	text-decoration: none;
+}
+
+.color-black {
+	color: #000;
+}
+
+.fadeInDown {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		margin-bottom: 0;
+	}
+	.searchButtons {
+		width: 100%;
+	}
+	.footer__links a {
+		font-size: 0.8em;
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		width: 80%;
+	}
+	.footer__links a {
+		font-size: 0.3em;
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -200%, 0);
+		transform: translate3d(0, -200%, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}

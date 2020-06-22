@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Google</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" href="/img/google-icon.svg" />
+	</head>
+	<body>
+		<div class="main-container">
+			<header class="header fadeInDown">
+				<a class="header__link" href="https://www.google.com/gmail/about/"
+					>Gmail</a
+				>
+				<a
+					class="header__link"
+					href="https://www.google.com.co/imghp?hl=en&tab=wi&ogbl"
+					>Imagenes</a
+				>
+				<button class="header__optionsButton"></button>
+				<a
+					href="https://accounts.google.com/signin/v2/identifier?hl=es-419&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+				>
+					<button class="header__profileButton">
+						<img
+							class="profileButton__img"
+							src="/img/profile.jpg"
+							alt="foto-perfil"
+						/>
+					</button>
+				</a>
+			</header>
+			<div class="container fadeInDown">
+				<img class="conatiner__logo" src="/img/google-icon.svg" alt="Google" />
+				<form id="form" class="container__form">
+					<label class="label">
+						<img class="label__searchIcon" src="/img/search.svg" alt="Buscar" />
+						<input id="input-search" class="label__input" type="text" />
+						<button class="label__microButton" type="button">
+							<img
+								class="microButton__img"
+								src="/img/micro.svg"
+								alt="Microfono"
+							/>
+						</button>
+					</label>
+					<div class="searchButtons">
+						<button class="searchButtons__button">Buscar con Google</button>
+						<button class="searchButtons__button" type="button">
+							Me siento con suerte
+						</button>
+					</div>
+					<br />
+					<br />
+					<p>
+						Ofrecido por Google en:
+						<a class="color-black" href="#">Español</a>
+					</p>
+				</form>
+			</div>
+			<footer class="footer">
+				<div class="footer__links">
+					<a href="https://ads.google.com/intl/en_CO/home/">Publicidad</a>
+					<a href="https://smallbusiness.withgoogle.com/intl/es-419_co/?c=CO#!/"
+						>Negocios</a
+					>
+					<a href="https://about.google/">Sobre Google</a>
+				</div>
+				<img class="footer__flag" src="/img/colombia.svg" alt="Flag" />
+				<div class="footer__links">
+					<a href="https://policies.google.com/privacy?fg=1">Privacidad</a>
+					<a href="https://policies.google.com/terms?fg=1">Condiciones</a>
+					<a href="#">Preferencias</a>
+				</div>
+			</footer>
+		</div>
+		<script src="/search.js"></script>
+	</body>
+</html>
