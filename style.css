@@ -183,6 +183,11 @@
 	height: 90%;
 }
 
+.footer__links ul {
+	display: flex;
+	list-style: none;
+}
+
 .footer__links a {
 	color: #323232;
 	font-size: 1.2em;
